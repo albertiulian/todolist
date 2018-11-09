@@ -5,24 +5,35 @@ public class TodoList {
     /*
      * Add a new item to the list, given a description and priority.
      */
+	public List<TodoListItem> items = new ArrayList<TodoListItem>();
+		
+	
+	
     public void addItem(String description, int priority) {
         // TODO
+    	items.add(null);
     }
     
     /*
      * Get the item at a given index.
      */
+    
     public TodoListItem getItem(int i) {
+		return items.get(0);
         // TODO
-        return null;
+    	
+        
     }
     
     /*
      * Get the number of items in the list.
      */
     public int size() {
-        // TODO
-        return 0;
+    	items.add(2, "bake a cake");
+    	
+    	int sizeOfList = items.size();
+    	//System.out.println("items in list is:" +sizeOfList);
+		return sizeOfList;
     }
     
     /*
